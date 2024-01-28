@@ -1,0 +1,15 @@
+﻿@model List<Course>
+
+
+    <header>
+        <h1>Kurs Listesi</h1>
+    </header>
+
+    <div class="container">
+        @foreach (var item in Model)
+        {
+           @await Html.PartialAsync("_Course",item);
+        }
+    </div>
+     
+  
