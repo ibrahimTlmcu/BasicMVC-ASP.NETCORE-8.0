@@ -4,9 +4,9 @@ namespace BasicMVC.Controllers
 {
     public class exampleController : Controller
     {
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "meeting";
         }
     }
 }
